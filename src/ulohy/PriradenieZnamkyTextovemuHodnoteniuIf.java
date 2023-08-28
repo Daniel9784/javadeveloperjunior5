@@ -21,11 +21,12 @@ public class PriradenieZnamkyTextovemuHodnoteniuIf {
     public static void main(String[] args) {
 
         String vstupnaHodnota = "";
-        String vstupnaTextovaZnamkaBezDiakritikyMalePismena = "";
+        String vstupnaTextovaZnamkaBezDiakritikyMalePismena = ""; // Dve uvodzovky reprentuju prazdny retazec, teda text
 
         Scanner sc = new Scanner(System.in); // Inicializacia skeneru pre pouzivatelsky vstup
+
         while (!vstupnaTextovaZnamkaBezDiakritikyMalePismena.equals("koniec")) {
-            System.out.println("Prosím zadaj textovú známku (výborný, chválitebný, dobrý, dostatočný, nedostatočný): ");
+            System.out.println("Prosím zadaj textovú známku (výborný, chválitebný, dobrý, dostatočný, nedostatočný). Ukončenie priogramu zadaním slova koniec. Tvoja známka je: ");
 
             vstupnaHodnota = sc.nextLine(); // Priamy pouzivatelsky vstup, vidiet v konzole. Na nacitanie String musime pouzit nextLine
             vstupnaTextovaZnamkaBezDiakritikyMalePismena = stripAccents(vstupnaHodnota).toLowerCase().trim(); // Odstranenie diakritiky a konverzia textu na male pismena a zaroven odstranenie medzier na zaciatku a konci
@@ -37,9 +38,9 @@ public class PriradenieZnamkyTextovemuHodnoteniuIf {
                 System.out.println(2);
             else if (vstupnaTextovaZnamkaBezDiakritikyMalePismena.equals("dobry"))
                 System.out.println(3);
-            else if (vstupnaTextovaZnamkaBezDiakritikyMalePismena.equals("dobry"))
+            else if (vstupnaTextovaZnamkaBezDiakritikyMalePismena.equals("dostatocny"))
                 System.out.println(4);
-            else if (vstupnaTextovaZnamkaBezDiakritikyMalePismena.equals("dobry"))
+            else if (vstupnaTextovaZnamkaBezDiakritikyMalePismena.equals("nedostatocny"))
                 System.out.println(5);
             else if (vstupnaTextovaZnamkaBezDiakritikyMalePismena.equals("koniec"))
                 System.out.println("Ukončenie programu");
