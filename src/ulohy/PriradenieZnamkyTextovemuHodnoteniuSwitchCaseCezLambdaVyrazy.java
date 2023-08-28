@@ -32,15 +32,15 @@ public class PriradenieZnamkyTextovemuHodnoteniuSwitchCaseCezLambdaVyrazy {
             vstupnaTextovaZnamkaBezDiakritikyMalePismena = stripAccents(vstupnaHodnota).toLowerCase().trim(); // Odstranenie diakritiky a konverzia textu na male pismena a zaroven odstranenie medzier na zaciatku a konci
 
             switch (vstupnaTextovaZnamkaBezDiakritikyMalePismena) {
-                case ("vyborny") -> {
+                case "vyborny" -> {
                     System.out.println(1);
                     System.out.println("Si najlepší");
                 }
-                case ("chvalitebny") -> System.out.println(2);
-                case ("dobry") -> System.out.println(3);
-                case ("dostatocny") -> System.out.println(4);
-                case ("nedostatocny") -> System.out.println(5);
-                case ("koniec") -> System.out.println("Ukončenie programu");
+                case "chvalitebny" -> System.out.println(2);
+                case "dobry" -> System.out.println(3);
+                case "dostatocny" -> System.out.println(4);
+                case "nedostatocny" -> System.out.println(5);
+                case "koniec" -> System.out.println("Ukončenie programu");
                 default -> System.out.println("Neznámy vstup!");
             }
 
