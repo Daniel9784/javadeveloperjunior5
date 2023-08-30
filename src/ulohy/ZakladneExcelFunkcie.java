@@ -38,7 +38,7 @@ public class ZakladneExcelFunkcie {
         return sum / cisla.length;
     }
 
-    // Metoda na priemerovanie hodnot v poli
+    // Metoda na efektivne priemerovanie hodnot v poli
     private static double priemerujEfektivne(double[] cisla) {
         return scitaj(cisla) / cisla.length;
     }
