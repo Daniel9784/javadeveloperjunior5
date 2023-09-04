@@ -6,10 +6,10 @@ Zdroj: https://sk.wikipedia.org/wiki/Fizz_buzz
 public class FizzBuzz {
     public static void main(String[] args) {
         for (int i = 1; i <= 30; i++) {
-            if (i % 3 == 0) System.out.print("Fizz\t");
-            if (i % 5 == 0) System.out.print("Buzz\t");
+            if (i % 3 == 0) System.out.print("Fizz, ");
+            if (i % 5 == 0) System.out.print("Buzz, ");
             if (i % 3 != 0 && i % 5 !=0)
-                System.out.print(i + "\t");
+                System.out.print(i + ", ");
         }
     }
 }
