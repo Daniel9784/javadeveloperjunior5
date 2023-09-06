@@ -17,7 +17,7 @@ public class TestujObdlznik {
     @DisplayName("Testy na vypocet obvodu")
     @Test
     public void testVypocitajObvod() {
-        assertEquals(9, Obdlznik.vypocitajObvod(2, 3), "Výpočet obvodu by mal byť 10"); // Prvy argument je ocakavana hodnota, druhy metoda, ktoru volame a treti hlaska (spatna vazba) v pripade ak test nepresiel
+        assertEquals(10, Obdlznik.vypocitajObvod(2, 3), "Výpočet obvodu by mal byť 10"); // Prvy argument je ocakavana hodnota, druhy metoda, ktoru volame a treti hlaska (spatna vazba) v pripade ak test nepresiel
         assertEquals(10, Obdlznik.vypocitajObvod(1.5, 3.5));
         assertEquals(2, Obdlznik.vypocitajObvod(0.9, 0.1));
     }
