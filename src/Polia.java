@@ -34,5 +34,11 @@ public class Polia {
             System.out.println(konkretnaZnacka);
         }
 
+        System.out.println("\nInicializacia pola s konkretnym poctom prkov");
+        // TODO Doplnte dalsiu znacku do znackyAut - toto nie je take jednoduche a priamociare
+        int [] cisla = new int[8]; // Inicializacia statickeho pola s 8-mi prvkami
+        cisla[0] = 10;
+        System.out.println(cisla[0]);
+        System.out.println(cisla[1]);
     }
 }
